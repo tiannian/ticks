@@ -21,7 +21,7 @@ class Conn:
 
     async def recv(self):
         message = await self.conn.deliver_message()
-        return message.publish_packet
+        return message.data
 
     async def public(self,topic,message):
         return self.conn.publish(topic,message)
