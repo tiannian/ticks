@@ -4,7 +4,8 @@ SOURCES += \
     main.cpp
 
 OTHER_FILES = \
-    main.qml
+    qml/main.qml
+    qml/Screen.qml
 
 RESOURCES += ticks.qrc
 
