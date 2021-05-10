@@ -25,6 +25,17 @@ WaylandCompositor {
         console.log("start with ", emulated ? "emulated": "tty")
     }
 
+    Instantiator {
+        id: screens
+        model: emulated ? emulatedScreens: Qt.application.screens
+
+        delegate: Screen {
+            screen: modelData
+            compositor: compositor
+            windowed: emulated
+        }
+    }
+
     // XdgOutputManagerV1 {}
 //     XdgShell {
     //     onToplevelCreated: shellSurfaces.append({shellSurface: xdgSurface});
