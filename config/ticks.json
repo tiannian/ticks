@@ -1,0 +1,12 @@
+{
+    "keybindings": [
+        {
+            "squence": "Meta+Shift+e",
+            "type": "ticks",
+            "command": "exit"
+        }
+    ],
+    "window": {
+        "gap": 2
+    }
+}
