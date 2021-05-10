@@ -14,22 +14,23 @@ find_package(Qt6 COMPONENTS Qml)
 qt_add_executable(ticks
     main.cpp
 )
-set_target_properties(ticks PROPERTIES
-    WIN32_EXECUTABLE TRUE
-    MACOSX_BUNDLE TRUE
-)
+
+# set_target_properties(ticks PROPERTIES
+    # WIN32_EXECUTABLE TRUE
+    # MACOSX_BUNDLE TRUE
+# )
+
 target_link_libraries(ticks PUBLIC
     Qt::Core
     Qt::Gui
     Qt::Qml
 )
 
-aux_source_directory(qml, ticks_resource_files)
 
-# set(ticks_resource_files
-#     "qml/main.qml"
-#     "qml/Screen.qml"
-# )
+set(ticks_resource_files
+    "qml/main.qml"
+    "qml/CompositorScreen.qml"
+)
 
 qt6_add_resources(ticks "ticks"
     PREFIX
