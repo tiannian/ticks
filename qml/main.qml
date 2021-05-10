@@ -29,7 +29,7 @@ WaylandCompositor {
         id: screens
         model: emulated ? emulatedScreens: Qt.application.screens
 
-        delegate: Screen {
+        delegate: CompositiorScreen {
             screen: modelData
             compositor: compositor
             windowed: emulated

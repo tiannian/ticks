@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/main.qml</file>
-        <file>qml/screen.qml</file>
+        <file>qml/CompositiorScreen.qml</file>
     </qresource>
 </RCC>

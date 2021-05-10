@@ -36,7 +36,7 @@ target_link_libraries(ticks PUBLIC
 # Resources:
 set(ticks_resource_files
     "qml/main.qml"
-    "qml/Screen.qml"
+    "qml/CompositiorScreen.qml"
 )
 
 qt6_add_resources(ticks "ticks"
