@@ -1,0 +1,9 @@
+= ticks
+
+> A unified UI for linux based wayland. inspired by sway and vim.
+
+== Features
+
+- Tailed Wayland Compositor.
+- Support all graphic card include nVidia.
+
