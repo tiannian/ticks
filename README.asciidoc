@@ -4,6 +4,6 @@
 
 == Features
 
-- Tailed Wayland Compositor.
+- Tiling Wayland Compositor.
 - Support all graphic card include nVidia.
 
