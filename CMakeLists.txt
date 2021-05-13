@@ -20,6 +20,9 @@ qt_add_executable(ticks
     # MACOSX_BUNDLE TRUE
 # )
 
+add_custom_target(ticksrs ALL cargo build --release
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/ticksrs)
+
 target_link_libraries(ticks PUBLIC
     Qt::Core
     Qt::Gui
