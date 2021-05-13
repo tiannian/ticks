@@ -21,12 +21,14 @@ qt_add_executable(ticks
 # )
 
 add_custom_target(ticksrs ALL cargo build --release
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/ticksrs)
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/ticks-rs)
 
 target_link_libraries(ticks PUBLIC
     Qt::Core
     Qt::Gui
     Qt::Qml
+    ${CMAKE_SOURCE_DIR}/ticks-rs/target/release/libticksrs.so
+    # ticksrs
 )
 
 
